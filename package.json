@@ -1,0 +1,27 @@
+{
+  "name": "colorboi",
+  "version": "1.0.0",
+  "description": "I eat crayons. Oh, I mean, I give colors.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "rm -rf dist/ && tsc -p .",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "ArnoldsK",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/color-thief-node": "^1.0.1",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "color-thief-node": "^1.0.4",
+    "discord.js": "^13.6.0",
+    "dotenv": "^11.0.0"
+  }
+}
