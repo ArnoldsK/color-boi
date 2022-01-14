@@ -11,9 +11,9 @@ export const removeColorRoles = async (member: GuildMember) => {
     const hasRole = role.members.has(member.id)
 
     if (!role.members.size || (role.members.size === 1 && hasRole)) {
-      await role.delete()
+      await role.delete().catch(() => false)
     } else if (hasRole) {
-      await member.roles.remove(role)
+      await member.roles.remove(role).catch(() => false)
     }
   }
 }
